@@ -1,13 +1,15 @@
-// Update result display when slider is moved
-document.querySelectorAll(".slider").forEach(slider => {
-    slider.addEventListener("input", function() {
-        this.parentElement.nextElementSibling.querySelector(".result").textContent = this.value;
-    });
-});
+// Handle file uploads
+document.querySelectorAll(".folder-label").forEach(label => {
+    const fileInput = label.querySelector(".file-upload");
+    const fileNameDisplay = label.parentElement.querySelector(".file-name");
 
-// Handle file upload when folder icon is clicked
-document.querySelectorAll(".folder-icon").forEach(icon => {
-    icon.addEventListener("click", function() {
-        this.nextElementSibling.click(); // Opens file dialog
+    label.addEventListener("click", function() {
+        fileInput.click(); // Open file selection
+    });
+
+    fileInput.addEventListener("change", function() {
+        if (fileInput.files.length > 0) {
+            fileNameDisplay.textContent = fileInput.files[0].name; // Show file name
+        }
     });
 });
