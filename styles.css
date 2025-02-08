@@ -1,4 +1,4 @@
-/* General Page Styles */
+/* Corporate Page Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -18,7 +18,7 @@ header {
 
 /* Table Styling */
 table {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
     border-collapse: collapse;
     background-color: white;
@@ -53,9 +53,20 @@ td, th {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    table {
-        width: 100%;
-    }
+/* Results Links */
+.result-link {
+    text-decoration: none;
+    color: #4c2881;
+    font-weight: bold;
+}
+
+.result-link:hover {
+    text-decoration: underline;
+}
+
+/* Folder Icon Styling */
+.folder-icon {
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 5px;
 }

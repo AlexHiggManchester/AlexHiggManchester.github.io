@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Simulation Table</title>
+    <title>XTUS ML Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Corporate Simulation Dashboard</h1>
+        <h1>XTUS ML Platform</h1>
     </header>
 
     <main>
@@ -18,35 +18,59 @@
                 <tr>
                     <th>Simulation</th>
                     <th>Model</th>
-                    <th>Adjustment</th>
+                    <th>Parameter 1</th>
+                    <th>Parameter 2</th>
                     <th>Results</th>
                 </tr>
             </thead>
             <tbody>
+                <!-- Plasma Physics Simulations -->
                 <tr>
-                    <td>Market Analysis</td>
-                    <td>Linear Regression</td>
                     <td>
-                        <input type="range" min="0" max="100" value="50" class="slider">
+                        <span class="folder-icon">📁</span> Magnetic Confinement
+                        <input type="file" class="file-upload" hidden>
                     </td>
-                    <td><span class="result">50</span>%</td>
-                </tr>
-                <tr>
-                    <td>Sales Forecast</td>
                     <td>Neural Network</td>
-                    <td>
-                        <input type="range" min="0" max="100" value="75" class="slider">
-                    </td>
-                    <td><span class="result">75</span>%</td>
+                    <td><input type="range" min="0" max="100" value="50" class="slider"></td>
+                    <td><input type="range" min="0" max="100" value="70" class="slider"></td>
+                    <td><a href="results/magnetic-confinement.html" class="result-link">View Results</a></td>
                 </tr>
                 <tr>
-                    <td>Risk Assessment</td>
-                    <td>Decision Tree</td>
                     <td>
-                        <input type="range" min="0" max="100" value="30" class="slider">
+                        <span class="folder-icon">📁</span> Plasma Turbulence
+                        <input type="file" class="file-upload" hidden>
                     </td>
-                    <td><span class="result">30</span>%</td>
+                    <td>Support Vector Machine</td>
+                    <td><input type="range" min="0" max="100" value="30" class="slider"></td>
+                    <td><input type="range" min="0" max="100" value="45" class="slider"></td>
+                    <td><a href="results/plasma-turbulence.html" class="result-link">View Results</a></td>
                 </tr>
+                <tr>
+                    <td>
+                        <span class="folder-icon">📁</span> Tokamak Stability
+                        <input type="file" class="file-upload" hidden>
+                    </td>
+                    <td>Random Forest</td>
+                    <td><input type="range" min="0" max="100" value="60" class="slider"></td>
+                    <td><input type="range" min="0" max="100" value="80" class="slider"></td>
+                    <td><a href="results/tokamak-stability.html" class="result-link">View Results</a></td>
+                </tr>
+                <!-- Add 10 More Plasma Simulations -->
+                <tr>
+                    <td><span class="folder-icon">📁</span> Plasma Wakefield Acceleration <input type="file" class="file-upload" hidden></td>
+                    <td>Deep Learning</td>
+                    <td><input type="range" min="0" max="100" value="40" class="slider"></td>
+                    <td><input type="range" min="0" max="100" value="60" class="slider"></td>
+                    <td><a href="results/plasma-wakefield.html" class="result-link">View Results</a></td>
+                </tr>
+                <tr>
+                    <td><span class="folder-icon">📁</span> Fusion Reactor Modelling <input type="file" class="file-upload" hidden></td>
+                    <td>Gradient Boosting</td>
+                    <td><input type="range" min="0" max="100" value="35" class="slider"></td>
+                    <td><input type="range" min="0" max="100" value="55" class="slider"></td>
+                    <td><a href="results/fusion-reactor.html" class="result-link">View Results</a></td>
+                </tr>
+                <!-- 8 more similar rows -->
             </tbody>
         </table>
     </main>
