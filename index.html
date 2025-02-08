@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Demo Website</title>
+    <title>Corporate Simulation Table</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Demo Website</h1>
-        <p>This is a simple webpage for demonstration.</p>
+        <h1>Corporate Simulation Dashboard</h1>
     </header>
 
     <main>
-        <button id="demoButton">Click Me</button>
-        <p id="message"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Simulation</th>
+                    <th>Model</th>
+                    <th>Adjustment</th>
+                    <th>Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Market Analysis</td>
+                    <td>Linear Regression</td>
+                    <td>
+                        <input type="range" min="0" max="100" value="50" class="slider">
+                    </td>
+                    <td><span class="result">50</span>%</td>
+                </tr>
+                <tr>
+                    <td>Sales Forecast</td>
+                    <td>Neural Network</td>
+                    <td>
+                        <input type="range" min="0" max="100" value="75" class="slider">
+                    </td>
+                    <td><span class="result">75</span>%</td>
+                </tr>
+                <tr>
+                    <td>Risk Assessment</td>
+                    <td>Decision Tree</td>
+                    <td>
+                        <input type="range" min="0" max="100" value="30" class="slider">
+                    </td>
+                    <td><span class="result">30</span>%</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <script src="script.js"></script>
